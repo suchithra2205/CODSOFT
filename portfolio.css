@@ -1,0 +1,360 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color: #080808;
+    color: aliceblue;
+   
+   
+} 
+ 
+header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    opacity:0;
+    animation:slideRight .5s ease forwards;
+    
+}
+.nav ul li {
+    
+    display: inline-block ;
+   margin: 10px 20px;
+   
+   
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    font-family:cursive;
+    font-size: 18px;
+    color: aliceblue;
+    
+ }
+ .introduction{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 500px;
+     margin-left: 20%; 
+   
+    flex-wrap: wrap;
+   padding: 20px;
+    
+ }
+ .introduction p{
+   line-height: 1.5;
+ }
+
+ .introduction h2{
+    background-image: linear-gradient(#7D1538,#EAC5D8,#0075C4);
+    color: transparent;
+    background-size: cover;
+    background-clip: text;
+    font-size: 30px;
+   font-family: cursive;
+   
+ }
+
+ 
+ .logo{
+    margin-left: 30%;
+    display: flex;
+    width: 300px;
+    justify-content:space-evenly;
+    font-size: 30px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+
+ }
+ #profile{
+    height: 200px;
+    width:200px;
+   
+    margin-bottom: 100px;
+    background-image: url("profile.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border:3px solid white;
+  box-shadow: 0px  0px 90px 33px black ;
+ }
+ 
+   ul li a:hover{
+    text-shadow:  5px 5px #7D1538;
+    text-transform: uppercase;
+   
+ }
+  
+ .logo a:nth-child(1){
+    color: #0075C4;
+    
+ }
+ .logo a:nth-child(2){
+    background-image: linear-gradient(purple,red,orange);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+
+ }
+ .logo a:nth-child(3){
+    color:whitesmoke;
+ }
+
+ .logo a :hover{
+
+    font-size: 50px;
+ }
+ 
+ #heading{
+    margin-left: 95vh;
+    position: relative;
+    margin-bottom: 2px;
+ }
+ 
+ .content{
+    height: 40vh;
+    width: 100%;
+    position:relative;
+    display:flex; 
+     margin-left: 10%;
+    margin-top: 100px; 
+   justify-content:space-around;
+ flex-direction: row;
+    align-items: center;
+    
+   
+ }
+ #pic{
+    height: 100px;
+    width:200px;
+    display: grid;
+grid-template-columns: auto auto auto;
+ padding: 10px;
+margin-top: 30px;
+    margin-right: 30px;
+    font-size: 30px;
+   
+ }
+ 
+ #pic i{
+   
+   padding: 20px;
+   box-shadow:10px 10px 50px 10px gray inset ;
+   border-radius: 60px;
+   color: rgb(47, 108, 238);
+ }
+ #pic i:hover{
+  transform: scale(0.5);
+ }
+ 
+
+
+  
+ .education{
+    width:50vh;
+    box-shadow:20px 20px 50px 10px gray inset ;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-right: 50vh;
+  
+    
+ }
+ .education h2{
+    font-size: 30px;
+  
+     
+
+ }
+ 
+ #book{
+   height: 250px;
+   width:250px;
+   background-image: url("https://img.freepik.com/premium-photo/opened-book-with-flying-pages-butterflies-dark-backgroundgenerative-ai_391052-12859.jpg");
+   background-size:contain;
+   background-repeat: no-repeat;
+   margin-top: 100px;
+ }
+ #heading{
+   position:relative;
+   margin-left: 1vh;
+   margin-bottom: 30px;
+ }
+ 
+ #skills {
+   height:500px;
+   width:500px;
+   display: flex;
+   align-items: center;
+   margin-top: 30vh;
+   
+   margin-left:30%;
+   justify-content: space-between;
+   flex-wrap: wrap;
+  flex-direction: row;
+  
+ }
+ #skills div{
+   height: 70px;
+   width: 70px;
+   color: aqua;
+   border-radius: 30%;
+   padding: 30px;
+   box-shadow:-15px -15px 15px rgba(255,255,255,0.2),
+   15px 15px 15px rgba(0,0,0,0.1),
+   inset -5px -5px 5px rgba(255,255,255,0.2),
+   inset 5px 5px 5px rgba(0,0,0,0.1);
+ }
+ .skills-icon i{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 40px;
+ }
+ .skills-icon p{
+  font-size: 20px;
+  padding-left: 15px;
+ }
+ .projects-section{
+   height:30vh;
+   width:100%;
+   margin-top: 30vh;
+   gap: 100px;
+    display:flex; 
+    justify-content: space-between;
+   
+ }
+ .project {
+   height: 500px;
+   width:500px;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+  
+ }
+ .project .image{
+   height: 200px;
+   width: 200px;
+   background-image: url("amazonclone1.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .project .image1{
+   height: 200px;
+   width: 200px;
+   background-image: url("tictoctoe.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .project .image2{
+   height: 200px;
+   width: 200px;
+   background-image: url("Rock-paper-scissors.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ .link{
+  background-color:white;
+  text-decoration: none;
+  border:1px solid black;
+  margin-left: 15px;
+ 
+ }
+ #more{
+  display: none;
+ }
+ #more1{
+  display: none;
+ }
+ #more2{
+  display: none;
+ } 
+ footer{
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(35, 34, 34);
+  margin-top: 50vh;
+  display: flex;
+ align-items:center; 
+ justify-content: center;
+
+
+ }
+ footer #contact{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items:center; 
+ justify-content: center;
+ flex-direction: column;
+ 
+ }
+ footer .info{
+  height: 50px;
+  width: 300px;
+  display: flex;
+  padding-left: 5px;
+  align-items: center;
+  gap: 20px;
+  color: bisque;
+ }
+ @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.introduction {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideRight {
+  0%{
+  transform : translateY(-100px);
+  opacity:0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity:1;
+}}
+
+@keyframes slideTop {
+  0%{
+  transform : translateX(-100px);
+  opacity:0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity:1;
+}}
+@media screen and (max-width: 860px){
+.content{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+}
+
+
+@media screen and(max-width:1080px){
+  #skills{
+    flex-direction: column;
+  }
+}
+@media screen and(max-width:768px){
+  footer{
+    width:200%;
+  }
+}
+

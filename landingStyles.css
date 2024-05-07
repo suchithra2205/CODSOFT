@@ -1,0 +1,318 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, img, button, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container1{
+    display: flex;
+  
+    justify-content: space-between;
+}
+
+
+/* Header styles */
+header {
+  
+     background-image:linear-gradient(to bottom,#f0e3ff,#d89cf6,#916dd5,#3e206d);
+    color: white;
+    padding: 15px 0;
+    
+}
+.navs{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 50px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li i 
+{
+    font-size:larger;
+}
+
+/* Main content styles */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    
+    color: rgb(192, 31, 192);
+   
+    height: 100px;
+    background-image: url("https://img.freepik.com/free-vector/new-arrival-concept-background_23-2147886285.jpg?t=st=1714977358~exp=1714980958~hmac=d08ce653acb8b99deb0d2afe11281f01ca86257d04593f8fc66772ad071b1aad&w=740");
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background-color:white;
+    color: rgb(192, 31, 192);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: rgb(192, 31, 192);
+    color: white;
+}
+
+/* Featured products section */
+.featured-products {
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background-color: #E5B8F4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#footwear h1 {
+ 
+    font-size:50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#810CA8;
+    animation: jump 2s linear  infinite forwards ;
+}
+#footwear p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    animation: animate 2s linear  forwards;
+    
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 20px 0;
+}
+
+.product button {
+    background-color: white;
+    color: #810CA8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color:#810CA8;
+    color: white;
+}
+
+/* Subscribe section */
+.subscribe {
+    text-align: center;
+    padding: 20px 0;
+    background-image:linear-gradient(#FFF7D4, #FFD95A,#C07F00,#4C3D3D) ;   
+    color: #072541
+}
+
+.subscribe form {
+    display: inline-block;
+    position: relative;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.subscribe button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+@keyframes animate {
+    0%{
+        transform : translateX(-100px);
+        opacity:0;
+        }
+        100%{
+            transform: translateX(0);
+            opacity:1;
+}
+}
+@keyframes jump {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+#container2 {
+    color:#999;
+    text-transform: uppercase;
+    font-size:36px;
+    font-weight:bold;
+    padding-top:50px;  
+    position: relative;
+    width:100%;
+    height: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+    display:block;
+  
+  }
+  
+  #flip {
+    height:50px;
+    overflow:hidden;
+  }
+  
+  #flip > div > div {
+    color:#fff;
+    padding:4px 12px;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 5s linear infinite;
+  }
+  
+  #flip div div {
+    background:#42c58a;
+  }
+  #flip div:first-child div {
+    background:#4ec7f3;
+  }
+  #flip div:last-child div {
+    background:#DC143C;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
